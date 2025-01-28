@@ -266,4 +266,48 @@ p {
     }
 }
 
+@media only screen and(max-width:480px){
+    .navbar{
+       flex-direction: column;
+       align-items: flex-start;
+       padding: 10px 20px;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .header-image{
+        height: 300px;
+    }
+
+    .header-image .menu-button{
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .category-btn{
+        width: 25px;
+        height: 250px;
+    }
+
+    .category-title{
+        font-size: 14px;
+    }
+
+    .item img{
+        width: 180px;
+        height: 180px;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .right-icons{
+        display: none;
+    }
+}
+
 
