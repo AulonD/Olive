@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../cssFiles/Olive.css">
+    <link rel="stylesheet" href="../cssFiles/style.css">
+    <link rel="stylesheet" href="../javascriptFiles/script.js">
+    <script src="../javascriptFiles/script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Images/Tree.png" alt="logo">
+            <span>Olive</span>
+        </div>
+        <ul>
+            <li><a href="../htmlFiles/home.html">Home</a></li>
+            <li><a href="../htmlFiles/about.html">About Us</a></li>
+            <li><a href="#menu" class="active">Menu</a></li>
+            <li><a href="../htmlFiles/index.html">Review</a></li>
+            <li><a href="../htmlFiles/contact.html">Contact Us</a></li>
+            <li><a href="../htmlFiles/loginregister.html">Login/Register</a></li>
+        </ul>      
+        
+        <div class="right-icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+    </div>
+    <section id="menu">
+        <h2>Menu</h2>
+        <p>Delicious meals on the way!</p>
+        
+        <div class="category-buttons">
+            <button class="category-btn" onclick="toggleCategory('food')">
+                <div class="category1">
+                    <img src="../Images/Menu-Food.png" alt="Food" class="category-image">
+                </div>
+            </button>
+        
+            <button class="category-btn" onclick="toggleCategory('dessert')">
+                <div class="category2">
+                    <img src="../Images/Menu-Dessert.png" alt="Dessert" class="category-image">
+                </div>
+            </button>
+        
+            <button class="category-btn" onclick="toggleCategory('drinks')">
+                <div class="category3">
+                    <img src="../Images/Menu-Drinks.png" alt="Drinks" class="category-image">
+                </div>
+            </button>
+        </div>
+
+        <div id="food" class="category-content ">
+            <div class="category-title">Soups</div>
+            <ul class="category-list">
+                <li>
+                    <div class="item">
+                        <img src="../Images/Pumpkin-Soup.jpg" alt="Pumpkin Soup">
+                        <p>Pumpkin Soup</p>
+                        <p class="item-price">5.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Tomato-Soup.jpg" alt="Tomato Soup">
+                        <p>Tomato Soup</p>
+                        <p class="item-price">4.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/pea-and-broccoli-soup.jpg" alt="Pea and Broccoli Soup">
+                        <p>Pea and Broccoli Soup</p>
+                        <p class="item-price">4.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Mushroom-Soup.jpg" alt="Creamy Mushroom Soup">
+                        <p>Creamy Mushroom Soup</p>
+                        <p class="item-price">5.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Lithuanian-Soup.jpg" alt="Lithuanian Soup">
+                        <p>Lithuanian Soup</p>
+                        <p class="item-price">5.50€</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="category-title">Salads</div>
+            <ul class="category-list">
+                <li>
+                    <div class="item">
+                        <img src="../Images/Cesar-Salad.jpg" alt="Cesar Salad">
+                        <p>Cesar Salad</p>
+                        <p class="item-price">5.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Quinoa-Salad.webp" alt="Quinoa Salad">
+                        <p>Quinoa Salad</p>
+                        <p class="item-price">4.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Asian-Salad.jpg" alt="Asian Salad">
+                        <p>Asian Salad</p>
+                        <p class="item-price">4.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Arugula-Salad.jpg" alt="Arugula Salad">
+                        <p>Arugula Salad</p>
+                        <p class="item-price">4.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Garden-Salad.jpg" alt="Garden Salad">
+                        <p>Garden Salad</p>
+                        <p class="item-price">4.00€</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="category-title">Pasta</div>
+            <ul class="category-list">
+                <li>
+                    <div class="item">
+                        <img src="../Images/Spaghetti-Bolognese.webp" alt="Spaghetti Bolognese">
+                        <p>Spaghetti Bolognese</p>
+                        <p class="item-price">5.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Pesto-Pasta.jpeg" alt="Pesto Pasta">
+                        <p>Pesto Pasta</p>
+                        <p class="item-price">4.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Seafood-Pasta.png" alt="Seafood Pasta">
+                        <p>Seafood Pasta</p>
+                        <p class="item-price">7.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/White-Sauce-Paste.jpg" alt="White Sauce Pasta">
+                        <p>White Sauce Pasta</p>
+                        <p class="item-price">4.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Alfredo-Pasta.jpg" alt="Alfredo Pasta">
+                        <p>Alfredo Pasta</p>
+                        <p class="item-price">4.50€</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="category-title">Pizza</div>
+            <ul class="category-list">
+                <li>
+                    <div class="item">
+                        <img src="../Images/Margherita-Pizza.jpg" alt="Margherita Pizza">
+                        <p>Margherita Pizza</p>
+                        <p class="item-price">5.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Four_Cheese_Pizza_Feng_Chen_-_Large1.jpg" alt="Four Cheese Pizza">
+                        <p>Four Cheese Pizza</p>
+                        <p class="item-price">6.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Meatballs-Pizza.jpg" alt="Meatballs Pizza">
+                        <p>Meatballs Pizza</p>
+                        <p class="item-price">8.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Pizza.webp" alt="Parm Pizza">
+                        <p>Parm Pizza</p>
+                        <p class="item-price">7.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Pepperoni-Pizza.jpeg" alt="Pepperoni Pizza">
+                        <p>Pepperoni Pizza</p>
+                        <p class="item-price">5.00€</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="dessert" class="category-content">
+            <div class="category-title">Dessert</div>
+            <ul class="category-list">
+                <li>
+                    <div class="item">
+                        <img src="../Images/Cookies.jpg" alt="White Cookies">
+                        <p>White Cookies</p>
+                        <p class="item-price">1.20€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/double-chocolate-cookies.webp" alt="Cacao Cookies">
+                        <p>Cacao Cookies</p>
+                        <p class="item-price">1.20€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/RedBiscuit.jpg" alt="Red Cookies">
+                        <p>Red Cookies</p>
+                        <p class="item-price">1.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/HeartedBiscuit.jpg" alt="HeartedBiscuit Cookies">
+                        <p>Hearted Biscuit</p>
+                        <p class="item-price">1.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Macaroons.jpg" alt="Macarons">
+                        <p>Macarons</p>
+                        <p class="item-price">1.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/LemonTart.jpg" alt="LemonTart">
+                        <p>Lemon Tart</p>
+                        <p class="item-price">2.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Muffin.jpg" alt="ChocolateMuffins">
+                        <p>Chocolate Muffins</p>
+                        <p class="item-price">1.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Double-chocolate-muffins.jpg" alt="Double-chocolate-muffins">
+                        <p>DoubleChocolate Muffins</p>
+                        <p class="item-price">1.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/San-Sebastian-Cheesecake.jpg" alt="San-Sebastian-Cheesecake">
+                        <p>San Sebastian Cheesecake</p>
+                        <p class="item-price">2.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/ForestFruit.jpg" alt="ForestFruitCheesecake">
+                        <p>Forest Fruit Cheesecake</p>
+                        <p class="item-price">2.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Roseberry_Cheesecake.jpg" alt="Roseberry_Cheesecake">
+                        <p>Roseberry Cheesecake</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/RedValvet.jpg" alt="RedValvetCheesecake">
+                        <p>Red Valvet Cheesecake</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/MangoCheesecake.jpg" alt="MangoCheesecake">
+                        <p>Mango Cheesecake</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/RosberryLemon.jpg" alt="RosberryLemonCheesecake">
+                        <p>Rosberry Lemon Cheesecake</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/Red_Valvet.jpg" alt="Red_Valvet">
+                        <p>Red Valvet</p>
+                        <p class="item-price">2.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/OreoCheesecake.jpg" alt="OreoCheesecake">
+                        <p>Oreo Cheesecake</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/CarrotCake.jpg" alt="CarrotCake">
+                        <p>Carrot Cake</p>
+                        <p class="item-price">2.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/PannaCota.jpg" alt="PannaCota">
+                        <p>Panna Cota</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/IceCream.jpg" alt="IceCream">
+                        <p>Ice Cream</p>
+                        <p class="item-price">1.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/pop.jpg" alt="Lolipop">
+                        <p>Lollipop</p>
+                        <p class="item-price">0.50€</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="drinks" class="category-content">
+            <div class="category-title">Drinks</div>
+            <ul class="category-list">
+                <li>
+                    <div class="item">
+                        <img src="../Images/espresso.jpg" alt="Esspreso">
+                        <p>Esspreso</p>
+                        <p class="item-price">1.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/turkish-coffee.jpg" alt="turkish-coffee">
+                        <p>Turkish Coffee</p>
+                        <p class="item-price">1.50€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/latte.webp" alt="latte">
+                        <p>Flat White Latte</p>
+                        <p class="item-price">2.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/PumpkinSpiceLatte.jpg" alt="PumpkinSpiceLatte">
+                        <p>Pumpkin Spice Latte</p>
+                        <p class="item-price">2.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/iced-coffee.webp" alt="iced-coffee">
+                        <p>Iced Coffee</p>
+                        <p class="item-price">2.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/matcha.jpeg" alt="matcha">
+                        <p>Matcha Latte</p>
+                        <p class="item-price">2.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/chocolate-smoothie.jpg" alt="chocolate-smoothie">
+                        <p>Chocolate Smoothie</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/strawberry-smoothie.jpg" alt="strawberry-smoothie">
+                        <p>Strawberry Smoothie</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/forest-smootie.webp" alt="forest-smootie">
+                        <p>Forest Fruit Smoothie</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <img src="../Images/avocato-smoothie.webp" alt="avocato-smoothie">
+                        <p>Avocado Smoothie</p>
+                        <p class="item-price">3.00€</p>
+                    </div>
+                </li>
+            
+            </ul>
+        </div>
+
+    </section>
+    </div>
+
+    <script>
+        function toggleCategory(category) {
+            document.querySelectorAll('.category-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(category).classList.add('active');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
