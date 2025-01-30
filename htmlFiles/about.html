@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olive Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../cssFiles/Olive.css">
+    <link rel="stylesheet" href="../cssFiles/style.css">
+    <link rel="stylesheet" href="../javascriptFiles/script.js">
+    <script src="../javascriptFiles/script.js"></script>
+
+</head>
+<body>
+    <div class="mine">
+        
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Images/Tree.png" alt="logo">
+            <span>Olive</span>
+        </div>
+        <ul>
+            <li><a href="../htmlFiles/home.html">Home</a></li>
+            <li><a href="../htmlFiles/about.html" class="active">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="../htmlFiles/index.html">Review</a></li>
+            <li><a href="../htmlFiles/contact.html">Contact Us</a></li>
+            <li><a href="../htmlFiles/loginregister.html">Login/Register</a></li>
+        </ul>      
+        
+        <div class="right-icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+    </div>
+
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Since 2000, we have proudly provided exceptional hospitality, delicious food and a welcoming atmosphere that brings people together. At our restaurant, we strive to blend the best of modern and traditional culinary traditions, offering a unique dining experience that satisfies every taste.
+            Our goal is to delight you with flavors that leave a lasting impression, ensuring you always look forward to your next visit. Whether you crave timeless classics or innovative dishes, we are here to deliver the perfect bite, crafted with passion and care.
+            We love what we do and our dedication drives us to continually refine our recipes and create plates that are as delicious as they are memorable. Join us and discover the joy of exceptional dining where every meal feels like coming home.
+</p>
+    </section>
+    </div>
+    <script>
+        function toggleCategory(category) {
+            document.querySelectorAll('.category-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(category).classList.add('active');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

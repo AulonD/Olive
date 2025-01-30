@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olive Restaurant</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../cssFiles/Olive.css">
     <link rel="stylesheet" href="../cssFiles/style.css">
     <link rel="stylesheet" href="../javascriptFiles/script.js">
     <script src="../javascriptFiles/script.js"></script>
-
 </head>
 <body>
-    <div class="mine">
-        
     <div class="navbar">
         <div class="logo">
             <img src="../Images/Tree.png" alt="logo">
             <span>Olive</span>
         </div>
         <ul>
-            <li><a href="../htmlFiles/home.html" >Home</a></li>
+            <li><a href="../htmlFiles/home.html">Home</a></li>
             <li><a href="../htmlFiles/about.html">About Us</a></li>
-            <li><a href="#menu">Menu</a></li>
+            <li><a href="#menu" class="active">Menu</a></li>
             <li><a href="../htmlFiles/index.html">Review</a></li>
             <li><a href="../htmlFiles/contact.html">Contact Us</a></li>
             <li><a href="../htmlFiles/loginregister.html">Login/Register</a></li>
@@ -34,19 +31,6 @@
             <a href="#" class="fas fa-shopping-cart"></a>
           </div>
     </div>
-
-    <div class="header-image">
-        <button class="menu-button" onclick="location.href='../htmlFiles/menu.html'">Menu</button>
-    </div>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Since 2000, we have proudly provided exceptional hospitality, delicious food and a welcoming atmosphere that brings people together. At our restaurant, we strive to blend the best of modern and traditional culinary traditions, offering a unique dining experience that satisfies every taste.
-            Our goal is to delight you with flavors that leave a lasting impression, ensuring you always look forward to your next visit. Whether you crave timeless classics or innovative dishes, we are here to deliver the perfect bite, crafted with passion and care.
-            We love what we do and our dedication drives us to continually refine our recipes and create plates that are as delicious as they are memorable. Join us and discover the joy of exceptional dining where every meal feels like coming home.
-</p>
-    </section>
-
     <section id="menu">
         <h2>Menu</h2>
         <p>Delicious meals on the way!</p>
@@ -454,213 +438,19 @@
 
     </section>
     </div>
-    <div class="colleague">
-        <header>
-            <!--<a href="#" class="logo"><i class="fas-fa-untensils"></i>Olive</a>
 
-        
-           <nav class="navbar">
-              <a class="active" href="index.html">Review</a>
-              <a href="contact.html">Contact Us</a>
-              <a href="loginregister.html">Login/Register</a>
-            </nav>-->
-        
-            <div class="icon">
-                <i class="fas fa-bars" id="menu-bars"></i>
-            </div>
-          </header>
+    <script>
+        function toggleCategory(category) {
+            document.querySelectorAll('.category-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(category).classList.add('active');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+
     
-    
-        <section id="section-wrapper">
-            <div class="box-wrapper">
-                <div class="info-wrap">
-                    <h2 class="info-title">Contact Information</h2>
-                    <h3 class="info-sub-title">Fill up the form and our Team will get back to you within 24 hours</h3>
-                    <ul class="info-details">
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <span>Phone:</span> <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-paper-plane"></i>
-                            <span>Email:</span> <a href="mailto:info@yoursite.com">info@restolive.com</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-globe"></i>
-                            <span>Website:</span> <a href="#">restaurantolive.com</a>
-                        </li>
-                    </ul>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
-                <div class="form-wrap">
-                    <form action="#" method="POST">
-                        <h2 class="form-title">Send us a message</h2>
-                        <div class="form-fields">
-                            <div class="form-group">
-                                <input type="text" class="fname" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="lname" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="email" placeholder="Mail">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" class="phone" placeholder="Phone">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="" placeholder="Write your message"></textarea>
-                            </div>
-                        </div>
-                        <input type="submit" value="Send Message" class="submit-button">
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!--<header>
-            <a href="#" class="logo"><i class="fas-fa-untensils"></i>Olive</a>
-        
-            <nav class="navbar">
-              <a class="active" href="index.html">Review</a>
-              <a  href="contact.html">Contact Us</a>
-              <a href="loginregister.html">Login/Register</a>
-            </nav>
-        
-            <div class="icon">
-              <i class="fas fa-bars" id="menu-bars"></i>
-              <i class="fas fa-search" id="search-icon"></i>
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#" class="fas fa-shopping-cart"></a>
-            </div>
-          </header>-->
-        
-          <form action="" id="searsh-form">
-            <input type="search" placeholder="search here..." name="" id="search-box">
-            <label for="search-box" class="fas fa-search"></label>
-            <i class="fas fa-times" id="close"></i>
-          </form>
-        
-        
-          <div class="container">
-            <div class="container__left">
-              <h1>Read what our customers love about us</h1>
-              <p>
-                Over 200 companies frim diverse sectors consult us to enhance the
-                user experience of their products and services.
-              </p>
-              <p>
-                We have helped companies increase their customer base and generate
-                multifold revenue with our service.
-              </p>
-              
-            </div>
-            <div class="container__right">
-              <div class="card">
-                <img src="../Images/pic1.png" alt="user" />
-                <div class="card__content">
-                  <span><i class="ri-double-quotes-l"></i></span>
-                  <div class="card__details">
-                    <p>
-                      We had a great time collaboraring with the Filament team. They
-                      have my high recommendation!
-                    </p>
-                    <h4>Aulon Demiri</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="../Images/pic2.png" alt="user" />
-                <div class="card__content">
-                  <span><i class="ri-double-quotes-l"></i></span>
-                  <div class="card__details">
-                    <p>
-                      The team drastically improved our product's user experience &
-                      increased our business outreach.
-                    </p>
-                    <h4>- And Dukagjini</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="../Images/pic3.png" alt="user" />
-                <div class="card__content">
-                  <span><i class="ri-double-quotes-l"></i></span>
-                  <div class="card__details">
-                    <p>
-                      I absolutely loved working with the Filament team. Complete
-                      experts at what they do!
-                    </p>
-                    <h4>Ariana Garde</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <header>
-            <!--<a href="#" class="logo"><i class="fas-fa-untensils"></i>Olive</a>-->
-        
-         <!---  <nav class="navbar">
-              <a class="active" href="index.html">Review</a>
-              <a href="contact.html">Contact Us</a>
-              <a href="loginregister.html">Login/Register</a>
-            </nav>
-        
-            <div class="icon">
-                <i class="fas fa-bars" id="menu-bars"></i>
-            </div>
-          </header>-->
-    
-    
-        <div class="wrapper">
-            <div class="title"><span>Login Form</span></div>
-            <form action="#">
-                <div class="row">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Email or Phone" required />
-                </div>
-                <div class="row">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" required />
-                </div>
-                <div class="pass"><a href="#">Forgot password?</a></div>
-                <div class="row button">
-                    <input type="submit" value="Login" />
-                </div>
-                <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
-            </form>
-        </div>            
-
-    </div>
-
-
-    <h4>You can find us in this address</h4>
-
-    <div class="mapouter">
-        <div class="gmap_canvas">
-            <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.1768089482794!2d21.162794675947346!3d42.65760847116676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549f851002abef%3A0x31c43a02497b38ae!2sOlive%20Bakery!5e0!3m2!1sen!2s!4v1738266324550!5m2!1sen!2s"
-             width="600" height="450" style="border:2px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-
-    <footer class="copy">Copyright &copy;Olive Restaurant</footer>
-
-
-<script>
-    function toggleCategory(category) {
-        document.querySelectorAll('.category-content').forEach(content => {
-            content.classList.remove('active');
-        });
-        document.getElementById(category).classList.add('active');
-    }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
-<script src="script.js"></script>
 </body>
-
-
 </html>
